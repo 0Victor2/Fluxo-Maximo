@@ -34,7 +34,7 @@ static bool bfs(Grafo* grafo, int fonte, int escoadouro, Aresta** parent) {
     while (!fila_vazia(fila)) {
         int u = desenfileirar(fila);
 
-        // Se chegamos no escoadouro, podemos parar a busca mais cedo
+        // Se chegar no escoadouro, pode parar a busca mais cedo
         if (u == escoadouro) {
             alcancou_escoadouro = true;
             break;
